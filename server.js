@@ -34,21 +34,8 @@ app.post('/api/notes', (req, res) => {
         console.log('Note Added!')
     });
 
-    res.json(note);
+    res.json(db);
 });
 
-app.delete('/api/notes/:id', (req,res) => {
-    let notePath = path.join(__dirname,'./db/db.json');
-
-    let noteId = req.params.id;
-
-    let data = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
-
-    const newData = data.filter( note => note.id !== noteId );
-
-    fs.writeFileSync('./db/db.json', JSON.stringify(newData));
-
-    res.json(newData);
-})
 
 app.listen(PORT, () => console.log(`App is listening on PORT ${PORT}`));
