@@ -18,7 +18,7 @@
 
 ## Installation
 
-**If forking repo, open console:**
+**If forking/cloning repo, open console:**
 
 If package.json file is present then type the command: `npm install`
 
@@ -28,7 +28,7 @@ _If no package.json file is present, type the command:_ `npm init -y` _then:_ `n
 
 **Access application through heroku badge at top of REAME.md**
 
-**If forking repo, once installation is complete run:**
+**If forking/cloning repo, once installation is complete run:**
 
 `npm start` or `node server.js`
 
